@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BABAB 초대 — 받은 한 끼 이야기 확인</title>
+<meta name="description" content="받은 BABAB 초대를 확인하고 앱에서 이어 보세요. 공개 상태와 참여 자격은 다시 확인됩니다.">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex,nofollow">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://wbrrpeavykesvtvdexpz.supabase.co; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<link rel="stylesheet" href="../style.css"><script src="invite.js" type="module"></script>
+</head>
+<body><main class="wrap">
+<div class="brand"><a href="../">BABAB</a></div>
+<section class="card">
+  <h1>받은 초대 확인</h1>
+  <p>앱 없이도 공개용 내용을 확인할 수 있어요. 실제 참여는 성인 인증과 최신 운영 상태를 확인한 뒤 결정돼요.</p>
+  <label for="invite-input">초대 링크 또는 32자리 코드</label>
+  <input id="invite-input" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="300">
+  <div class="btnrow"><button id="resolve" class="btn" type="button">초대 확인</button></div>
+  <p id="status" role="status" aria-live="polite"></p>
+  <article id="preview" hidden>
+    <h2 id="preview-title"></h2><p id="preview-body" class="preview-copy"></p><p id="preview-area"></p>
+    <p id="preview-time"></p><p id="preview-count"></p>
+    <p class="notice">공유는 예약이나 좌석 확보가 아니에요. 정확한 장소·참석자·비공개 기록은 이 페이지에 표시하지 않아요.</p>
+    <div class="btnrow"><a id="open-app" class="btn">설치된 앱에서 열기</a><button id="copy-code" class="btn light" type="button">설치 전 코드 복사</button></div>
+  </article>
+  <h2>아직 앱이 없다면</h2>
+  <p>먼저 코드를 복사한 뒤 앱을 설치해 주세요. 로그인 후 <strong>내 계정 → 받은 초대 복원</strong>에 붙여 넣으면 이어 볼 수 있어요. 설치 후 자동 복원을 보장하지 않으며, 링크는 30일 이내에 만료됩니다.</p>
+  <div class="btnrow"><a class="btn light" href="https://apps.apple.com/kr/app/id6765523903">App Store에서 설치</a></div>
+  <p class="en">Copy your invite code before installing. After signing in, open My account → Restore an invite and paste it. This preview does not reserve a seat. Invite attribution requires separate consent in the app.</p>
+  <noscript><p>초대 확인에는 JavaScript가 필요합니다. 링크의 code 값을 앱의 ‘받은 초대 복원’에 직접 입력해 주세요.</p></noscript>
+</section>
+<footer class="footer"><a href="../privacy.html">개인정보처리방침</a> · <a href="../terms.html">이용약관</a> · <a href="mailto:sr4258@columbia.edu">문의</a></footer>
+</main></body></html>
