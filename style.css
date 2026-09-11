@@ -2,7 +2,7 @@
   --bg: #FBF7F0;
   --card: #FFFFFF;
   --ink: #3B342C;
-  --muted: #8A857C;
+  --muted: #655F57;
   --coral: #D85A30;
   --coral-dark: #993C1D;
   --border: #EDE6DB;
@@ -22,7 +22,7 @@ body {
 h1 { font-size: 26px; margin: 8px 0 4px; }
 .date { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
 h2 { font-size: 17px; margin: 28px 0 8px; color: var(--coral-dark); }
-p, li { font-size: 15px; }
+p, li { font-size: 16px; }
 ul { padding-left: 20px; margin: 6px 0 12px; }
 .card {
   background: var(--card);
@@ -41,3 +41,13 @@ a { color: var(--coral-dark); }
   background: var(--coral); color: #fff; text-decoration: none; font-weight: 600; font-size: 14px;
 }
 .btn.light { background: #FAECE7; color: var(--coral-dark); }
+.brand-image { display: block; width: min(42vw, 200px); height: auto; border-radius: 24px; margin-bottom: 24px; }
+.notice { border-left: 3px solid var(--coral); padding-left: 14px; margin: 20px 0; }
+button, input { font: inherit; }
+button.btn { border: 0; cursor: pointer; }
+button:disabled { opacity: .55; cursor: wait; }
+input { width: 100%; min-height: 48px; border: 1px solid #9a8d7e; border-radius: 8px; padding: 10px; margin-top: 6px; }
+:focus-visible { outline: 3px solid #9d350e; outline-offset: 4px; }
+[hidden] { display: none !important; }
+.preview-copy { white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 440px) { body { padding: 20px 14px 48px; } .card { padding: 24px 18px; } h1 { font-size: 27px; line-height: 1.4; } .btn { min-height: 44px; } }
