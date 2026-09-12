@@ -6,4 +6,5 @@ assert.equal(parseInvite(`babab://invite?code=${code}`), code);
 for (const value of [`http://richryu98.github.io/babab-site/invite/?code=${code}`, `https://evil.invalid/?code=${code}`, `babab://invite?code=${code}&code=${code}`, `babab://invite?code=person-id`]) assert.equal(parseInvite(value), null);
 assert.equal(Boolean(isPublicPreview({ kind: 'app', title: 'BABAB', body: '공개' })), true);
 assert.equal(Boolean(isPublicPreview({ kind: 'passport', title: 'private', body: 'private' })), false);
+assert.equal(Boolean(isPublicPreview({ kind: 'post', title: '피드 이야기', body: '내가 공개한 글' })), true);
 console.log('Public invite URL and projection contracts passed');

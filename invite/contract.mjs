@@ -12,7 +12,7 @@ export function parseInvite(input) {
 }
 
 export function isPublicPreview(value) {
-  return value && ['app', 'area', 'curated', 'story'].includes(value.kind)
+  return value && ['app', 'area', 'curated', 'story', 'post'].includes(value.kind)
     && typeof value.title === 'string' && value.title.length <= 300
     && typeof value.body === 'string' && value.body.length <= 2000;
 }
